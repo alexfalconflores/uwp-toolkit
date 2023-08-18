@@ -121,6 +121,9 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Converters\ElementThemeToIconConverter.cs" />
+    <Compile Include="Converters\ElementThemeToStringConverter.cs" />
+    <Compile Include="Converters\EnumToBooleanConverter.cs" />
     <Compile Include="DB\SQLite\SQLite.cs" />
     <Compile Include="Extensions\ObservableCollectionExtensions.cs" />
     <Compile Include="Extensions\ResourceExtensions.cs" />
@@ -146,6 +149,9 @@
     <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
       <Version>2.1.5</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UWP Toolkit.nuspec" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
