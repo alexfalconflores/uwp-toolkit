@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace UWP_Toolkit.Math;
 
-public static class IntegerExtensions
+public static class Integer
 {
     //public static long Fibonacci(int n)
     //{
