@@ -14,15 +14,34 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{3208FEA1-0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "extensions", "extensions", "{47D925C7-A5D1-4AF9-8418-A7F892EA74C1}"
 	ProjectSection(SolutionItems) = preProject
+		docs\extensions\collectionExtensions.md = docs\extensions\collectionExtensions.md
+		docs\extensions\enumerableExtensions.md = docs\extensions\enumerableExtensions.md
 		docs\Extensions\observableCollectionExtensions.md = docs\Extensions\observableCollectionExtensions.md
 		docs\Extensions\resourceExtensions.md = docs\Extensions\resourceExtensions.md
 		docs\Extensions\scrollViewerExtension.md = docs\Extensions\scrollViewerExtension.md
+		docs\extensions\settingsStorageExtensions.md = docs\extensions\settingsStorageExtensions.md
 		docs\Extensions\storageFileExtensions.md = docs\Extensions\storageFileExtensions.md
 		docs\Extensions\storageFolderExtensions.md = docs\Extensions\storageFolderExtensions.md
 		docs\Extensions\stringExtensions.md = docs\Extensions\stringExtensions.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppNet7", "ConsoleAppNet7\ConsoleAppNet7.csproj", "{76403BC8-36B8-41CF-BEC2-9B677C96A011}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppNet7", "ConsoleAppNet7\ConsoleAppNet7.csproj", "{76403BC8-36B8-41CF-BEC2-9B677C96A011}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "helpers", "helpers", "{3B458F10-6B26-4D24-8130-2C79B8F4FAFC}"
+	ProjectSection(SolutionItems) = preProject
+		docs\helpers\json.md = docs\helpers\json.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "math", "math", "{DEF25A48-6C12-4DBC-B39F-5361AB5FB878}"
+	ProjectSection(SolutionItems) = preProject
+		docs\math\integer.md = docs\math\integer.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{764C828A-2FA6-4414-8E9C-7A4B334F3AEA}"
+	ProjectSection(SolutionItems) = preProject
+		docs\services\themeSelectorService.md = docs\services\themeSelectorService.md
+		docs\services\themeTitleBarService.md = docs\services\themeTitleBarService.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +104,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3208FEA1-00B8-4F20-96D3-A9420758E850} = {3E4E4DED-C46D-45E0-BC6B-70F790CBAA24}
 		{47D925C7-A5D1-4AF9-8418-A7F892EA74C1} = {3208FEA1-00B8-4F20-96D3-A9420758E850}
+		{3B458F10-6B26-4D24-8130-2C79B8F4FAFC} = {3208FEA1-00B8-4F20-96D3-A9420758E850}
+		{DEF25A48-6C12-4DBC-B39F-5361AB5FB878} = {3208FEA1-00B8-4F20-96D3-A9420758E850}
+		{764C828A-2FA6-4414-8E9C-7A4B334F3AEA} = {3208FEA1-00B8-4F20-96D3-A9420758E850}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7105AD06-F319-46E8-8535-B6328DACDFCA}
