@@ -1,4 +1,4 @@
-![UWP Toolkit Cover](assets/uwp-toolkit-cover.png)
+![UWP Toolkit Cover](https://i.imgur.com/K6wggYK.png)
 
 > This project uses `C# 11` with the [`PolySharp`](https://github.com/Sergio0694/PolySharp/tree/main) library. The minimum version is Windows 10, `1903` (Build,18362).
 
