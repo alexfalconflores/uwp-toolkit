@@ -11,7 +11,7 @@
 ## Installation 📦
 This project is available as a [NuGet package](https://www.nuget.org/packages/AlexFalconFlores.UWP.Toolkit). You can install it using the NuGet Package Console window:
 ```
-NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.4
+NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.5
 ```
 
 ## Documentation 📖
