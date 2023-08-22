@@ -10,6 +10,55 @@ namespace UWP_Toolkit.Services;
 
 public static class ThemeSelectorService
 {
+    // Windows Template Studio: https://marketplace.visualstudio.com/items?itemName=TemplateStudio.TemplateStudioForUWP
+    /* Note: This Class is based on the ThemeSelectorService from the Windows Template Studio, but with some
+    changes to make it work with the ThemeTitleBarService from the UWP Toolkit.
+    You can delete the ThemeSelectorService from the Windows Template Studio if you use the ThemeTitleBarService
+    from the UWP Toolkit in your project. */
+    /* Or you can use the ThemeTitleBarService inside your ThemeSelectorService from the Windows Template Studio.
+     Example:
+     Put private static ThemeTitleBarService themeTitleBar; on top of the SettingsKey const.
+     Add themeTitleBar = new ThemeTitleBarService(); and themeTitleBar.SetTheme(); in the InitializeAsync method.
+     Code:
+        public static async Task InitializeAsync()
+        {
+            Theme = await LoadThemeFromSettingsAsync();
+            themeTitleBar = new ThemeTitleBarService();
+            //Theme Default
+            themeTitleBar.SetTheme();
+        }
+
+    Add themeTitleBar.SetTheme(); in the SetRequestedThemeAsync method.
+    Code:
+        public static async Task SetRequestedThemeAsync()
+		{
+			foreach (var view in CoreApplication.Views)
+			{
+				await view.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+				{
+					if (Window.Current.Content is FrameworkElement frameworkElement)
+					{
+						frameworkElement.RequestedTheme = Theme;
+						// Change Theme manually
+						themeTitleBar.SetTheme();
+					}
+				});
+			}
+		}
+
+    Add ThemeTitleBarService.CurrentWindow = Window.Current; in the App Method.
+    Code: App.xaml.cs
+        public App()
+        {
+                InitializeComponent();
+                // <...>
+                // Deferred execution until used. Check https://docs.microsoft.com/dotnet/api/system.lazy-1 for further info on Lazy<T> class.
+			    _activationService = new Lazy<ActivationService>(CreateActivationService);
+
+                ThemeTitleBarService.CurrentWindow = Window.Current;
+        }
+    */
+
     private static ThemeTitleBarService themeTitleBar;
     private const string SettingsKey = "AppBackgroundRequestedTheme";
 
