@@ -25,6 +25,14 @@ NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.4
         - [TrimAround](docs/extensions/stringExtensions#TrimAround)
         - [IsNullOrEmpty](docs/extensions/stringExtensions#IsNullOrEmpty)
         - [IsNullOrWhiteSpace](docs/extensions/stringExtensions#IsNullOrWhiteSpace)
+        - [Join](docs/extensions/stringExtensions#Join)
+        - [Repeat](docs/extensions/stringExtensions#Repeat)
+        - [ToCamelCase](docs/extensions/stringExtensions#ToCamelCase)
+        - [ToPascalCase](docs/extensions/stringExtensions#ToPascalCase)
+        - [ToKebabCase](docs/extensions/stringExtensions#ToKebabCase)
+        - [ToSnakeCase](docs/extensions/stringExtensions#ToSnakeCase)
+        - [HtmlEscape](docs/extensions/stringExtensions#HtmlEscape)
+        - [HtmlUnEscape](docs/extensions/stringExtensions#HtmlUnEscape)
     - [ObservableCollectionExtensions](docs/extensions/observableCollectionExtensions.md)
         - [RemoveAll(match)](docs/extensions/observableCollectionExtensions.md#RemoveAll(match))
         - [RemoveAll(match,action)](docs/extensions/observableCollectionExtensions.md#RemoveAll(match,action))
@@ -34,6 +42,32 @@ NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.4
         - [IsImage](docs/extensions/storageFolderExtensions.md#IsImage)
     - [ScrollViewerExtension](docs/extensions/scrollViewerExtension.md)
         - [GetScrollViewer](docs/extensions/scrollViewerExtension.md#GetScrollViewer)
+    - [EnumerableExtensions](docs/extensions/enumerableExtensions.md)
+        - [Flatten](docs/extensions/EnumerableExtensions.md#Flatten)
+        - [ToObservableCollection](docs/extensions/EnumerableExtensions.md#ToObservableCollection)
+    - [CollectionExtensions](docs/extensions/collectionExtensions.md)
+        - [Fill](docs/extensions/collectionExtensions.md#Fill)
+    - [SettingsStorageExtensions](docs/extensions/settingsStorageExtensions.md)
+        - [IsRoamingStorageAvailable](docs/extensions/settingsStorageExtensions.md#IsRoamingStorageAvailable)
+        - [SaveAsync(this StorageFolder folder, string name, T content)](docs/extensions/settingsStorageExtensions.md#SaveAsync)
+        - [SaveAsync(this ApplicationDataContainer settings, string key, T value)](docs/extensions/settingsStorageExtensions.md#SaveAsync)
+        - [ReadAsync(this StorageFolder folder, string name)](docs/extensions/settingsStorageExtensions.md#ReadAsync)
+        - [ReadAsync(this ApplicationDataContainer settings, string key)](docs/extensions/settingsStorageExtensions.md#ReadAsync)
+        - [SaveString](docs/extensions/settingsStorageExtensions.md#SaveString)
+        - [SaveFileAsync](docs/extensions/settingsStorageExtensions.md#SaveFileAsync)
+        - [ReadFileAsync](docs/extensions/settingsStorageExtensions.md#ReadFileAsync)
+        - [ReadBytesAsync](docs/extensions/settingsStorageExtensions.md#ReadBytesAsync)
+- **Helpers**
+    - [Json](docs/helpers/json.md)
+        - [ToObjectAsync](docs/helpers/json.md#ToObjectAsync)
+        - [StringifyAsync](docs/helpers/json.md#StringifyAsync)
+- **Math**
+    - [IntegerExtensions](docs/math/integer.md)
+        - [Fibonacci](docs/math/integer.md#Fibonacci)
+- **Services**
+	- [ThemeTitleBarService](docs/services/themeTitleBarService.md)
+	- [ThemeSelectorService](docs/services/themeSelectorService.md)
+
 
 
 
@@ -41,3 +75,4 @@ NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.4
 - PolySharp
 - SQLitePCLRaw.bundle_e_sqlite3
 - Microsoft.Data.Sqlite.Core
+- Newtonsoft.Json
