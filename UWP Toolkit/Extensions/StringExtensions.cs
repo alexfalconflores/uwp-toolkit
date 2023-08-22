@@ -57,14 +57,6 @@ public static class StringExtensions
         if (collection is null) throw new ArgumentNullException(nameof(collection));
         return string.Join(separator, collection);
     }
-    #region Join Examples
-    /*
-     * var list = new List<string> { "a", "b", "c" };
-     * var newString = list.Join(",");
-     * console.WriteLine(newString);
-     * result: a,b,c
-     */
-    #endregion Join Examples
 
     /// <summary>
     /// Repeats the given string n times.
@@ -83,13 +75,6 @@ public static class StringExtensions
             result += input;
         return result;
     }
-    #region Repeat Examples
-    /*
-     * var newString = "aasdd".Repeat(3);
-Console.WriteLine(newString);
-    aasddaasddaasdd
-     */
-    #endregion Repeat Examples
 
     private static string CaseRegex => @"[^A-Za-z0-9]+";
 
@@ -112,17 +97,6 @@ Console.WriteLine(newString);
         }
         return result;
     }
-    #region ToCamelCase Examples
-    /*
-string newString = "Foo Bar".ToCamelCase();
-string newString2 = "--foo-bar--".ToCamelCase();
-string newString3 = "__FOO_BAR__".ToCamelCase();
-Console.WriteLine(newString);
-Console.WriteLine(newString2);
-Console.WriteLine(newString3);
-    fooBar
-     */
-    #endregion ToCamelCase Examples
 
     // TODO : ADD URL TO PASCAL CASE
     /// <summary>
@@ -142,18 +116,6 @@ Console.WriteLine(newString3);
         return result;
     }
 
-    #region ToPascalCase Examples
-    /*
-      string newString = "Foo Bar".ToPascalCase();
-string newString2 = "--foo-bar--".ToPascalCase();
-string newString3 = "__FOO_BAR__".ToPascalCase();
-Console.WriteLine(newString);
-Console.WriteLine(newString2);
-Console.WriteLine(newString3);
-    FooBar
-     */
-    #endregion ToPascalCase Examples
-
     /// <summary>
     /// Converts string to <see href="https://en.wikipedia.org/wiki/Letter_case#Special_case_styles">kebab-case</see>.
     /// </summary>
@@ -167,17 +129,6 @@ Console.WriteLine(newString3);
         string[] words = Regex.Split(input, CaseRegex).Where(words => !string.IsNullOrEmpty(words)).ToArray();
         return words.Join("-");
     }
-    #region ToKebabCase Examples
-    /*
-     * string newString = "Foo Bar".ToKebabCase();
-string newString2 = "--foo-bar--".ToKebabCase();
-string newString3 = "__FOO_BAR__".ToKebabCase();
-Console.WriteLine(newString);
-Console.WriteLine(newString2);
-Console.WriteLine(newString3);
-    foo-bar
-     */
-    #endregion ToKebabCase Examples
 
     /// <summary>
     /// Converts string to <see href="https://en.wikipedia.org/wiki/Snake_case">snake_case</see>.
@@ -192,17 +143,6 @@ Console.WriteLine(newString3);
         string[] words = Regex.Split(input, CaseRegex).Where(words => !string.IsNullOrEmpty(words)).ToArray();
         return words.Join("_");
     }
-    #region ToSnakeCase Examples
-    /*
-     * string newString = "Foo Bar".ToSnakeCase();
-string newString2 = "--foo-bar--".ToSnakeCase();
-string newString3 = "__FOO_BAR__".ToSnakeCase();
-Console.WriteLine(newString);
-Console.WriteLine(newString2);
-Console.WriteLine(newString3);
-    foo_bar
-     */
-    #endregion ToSnakeCase Examples
 
     /// <summary>
     /// Converts the characters "&", "<", ">", '"', and "'" in string to their corresponding HTML entities.
@@ -215,13 +155,6 @@ Console.WriteLine(newString3);
         if (input is null) throw new ArgumentNullException(nameof(input));
         return WebUtility.HtmlEncode(input);
     }
-    #region HtmlEscape Examples
-    /*
-     * var stringHTML = "< fred >, barney, & pebbles".HtmlEscape();
-Console.WriteLine(stringHTML);
-    &lt; fred &gt;, barney, &amp; pebbles
-     */
-    #endregion HtmlEscape Examples
 
     /// <summary>
     /// The inverse of <see cref="HtmlEscape(string)"/>; this method converts the HTML entities &amp;, &lt;, &gt;, &quot;, and &#39; in string to their corresponding characters."/>
@@ -234,11 +167,4 @@ Console.WriteLine(stringHTML);
         if (input is null) throw new ArgumentNullException(nameof(input));
         return WebUtility.HtmlDecode(input);
     }
-    #region HtmlUnEscape Examples
-    /*
-     * var stringDefault = stringHTML.HtmlUnEscape();
-        Console.WriteLine(stringDefault);
-     * < fred >, barney, & pebbles
-     */
-    #endregion HtmlUnEscape Examples
 }
