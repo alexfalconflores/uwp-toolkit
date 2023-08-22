@@ -19,11 +19,6 @@ public static class SettingsStorageExtensions
     /// <param name="appData"></param>
     /// <returns></returns>
     public static bool IsRoamingStorageAvailable(this ApplicationData appData) => appData.RoamingStorageQuota == 0;
-    #region IsRoamingStorageAvailable example
-    //ApplicationData appData = ApplicationData.Current;
-    // bool isRoamingStorageAvailable = appData.IsRoamingStorageAvailable();
-    // output: true or false
-    #endregion IsRoamingStorageAvailable example
 
     /// <summary>
     /// Saves the serialized content in JSON format to a file int the specified folder.
@@ -40,10 +35,6 @@ public static class SettingsStorageExtensions
 
         await FileIO.WriteTextAsync(file, fileContent);
     }
-    #region SaveAsync example
-    //StorageFolder folder = ApplicationData.Current.LocalFolder;
-    //await folder.SaveAsync("myFile", new { Name = "Alex Falcon", Age = 22 });
-    #endregion SaveAsync example
 
     /// <summary>
     /// Reads and deserializes the content of a JSON file from the specified folder
@@ -62,11 +53,6 @@ public static class SettingsStorageExtensions
         var fileContent = await FileIO.ReadTextAsync(file);
         return await Json.ToObjectAsync<T>(fileContent);
     }
-    #region ReadAsync example
-    //StorageFolder folder = ApplicationData.Current.LocalFolder;
-    //var content = await folder.ReadAsync<Person>("person");
-    // output: { Name = "Alex Falcon", Age = 23 }
-    #endregion ReadAsync example
 
     /// <summary>
     /// Saves the serialized value in JSON format to the local settings.
@@ -77,10 +63,6 @@ public static class SettingsStorageExtensions
     /// <param name="value"></param>
     /// <returns></returns>
     public static async Task SaveAsync<T>(this ApplicationDataContainer settings, string key, T value) => settings.SaveString(key, await Json.StringifyAsync(value));
-    #region SaveAsync example
-    //ApplicationDataContainer settings = ApplicationData.Current.LocalSettings;
-    //await settings.SaveAsync("person", new { Name = "Alex Falcon", Age = 24 });
-    #endregion SaveAsync example
 
     /// <summary>
     /// Saves a string value to the local settings.
@@ -89,10 +71,6 @@ public static class SettingsStorageExtensions
     /// <param name="key"></param>
     /// <param name="value"></param>
     public static void SaveString(this ApplicationDataContainer settings, string key, string value) => settings.Values[key] = value;
-    #region SaveString example
-    //ApplicationDataContainer settings = ApplicationData.Current.LocalSettings;
-    //settings.SaveString("person", "Alex Falcon");
-    #endregion SaveString example
 
     /// <summary>
     /// Reads and deserializes a value from the local settings.
@@ -110,11 +88,6 @@ public static class SettingsStorageExtensions
             return await Json.ToObjectAsync<T>((string)obj);
         return default;
     }
-    #region ReadAsync example
-    //ApplicationDataContainer settings = ApplicationData.Current.LocalSettings;
-    //var greeting = await settings.ReadAsync<string>("greeting");
-    // output: "Hello World!"
-    #endregion ReadAsync example
 
     /// <summary>
     /// Saves a byte array to a file in the specified folder.
@@ -136,10 +109,6 @@ public static class SettingsStorageExtensions
         await FileIO.WriteBytesAsync(storageFile, content);
         return storageFile;
     }
-    #region SaveFileAsync example
-    // StorageFolder documents = KnownFolders.DocumentsLibrary;
-    // StorageFile file = await documents.SaveFileAsync(new byte[] { 72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100 }, "example.txt");
-    #endregion SaveFileAsync example
 
     /// <summary>
     /// Reads the content of a file from the specified folder and returns it as a byte array.
@@ -161,11 +130,6 @@ public static class SettingsStorageExtensions
         }
         return null;
     }
-    #region ReadFileAsync example
-    // StorageFolder documents = KnownFolders.DocumentsLibrary;
-    // byte[] content = await documents.ReadFileAsync("example.txt");
-    // output: { 72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100 }
-    #endregion ReadFileAsync example
 
     /// <summary>
     /// Reads the content of a file in the form of byte array.
@@ -187,12 +151,6 @@ public static class SettingsStorageExtensions
         }
         return null;
     }
-    #region ReadBytesAsync example
-    // StorageFolder documents = KnownFolders.DocumentsLibrary;
-    // StorageFile file = await documents.GetFileAsync("example.txt");
-    // byte[] content = await file.ReadBytesAsync();
-    // output: { 72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100 }
-    #endregion ReadBytesAsync example
 
     /// <summary>
     /// Gets the file name with the specified extension.
