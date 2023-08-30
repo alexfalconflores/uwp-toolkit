@@ -39,8 +39,13 @@ NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.5
         - [RemoveAll(match,action)](docs/extensions/observableCollectionExtensions.md#RemoveAll(match,action))
     - [StorageFolderExtensions](docs/extensions/storageFolderExtensions.md)
         - [GetFolderIfExistsAsync](docs/extensions/storageFolderExtensions.md#GetFolderIfExistsAsync)
+<<<<<<< HEAD
     - [StorageFileExtensions](docs/extensions/StorageFileExtensions.md)
         - [IsImage](docs/extensions/StorageFileExtensions.md#IsImage)
+=======
+    - [StorageFileExtensions](docs/extensions/storageFileExtensions.md)
+        - [IsImage](docs/extensions/storageFileExtensions.md#IsImage)
+>>>>>>> 4fca01f1b5ad8d17a95ab42dcbff7a76c2cac0d8
     - [ScrollViewerExtension](docs/extensions/scrollViewerExtension.md)
         - [GetScrollViewer](docs/extensions/scrollViewerExtension.md#GetScrollViewer)
     - [EnumerableExtensions](docs/extensions/enumerableExtensions.md)
