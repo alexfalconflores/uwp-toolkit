@@ -34,6 +34,10 @@ NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.5
         - [ToSnakeCase](docs/extensions/stringExtensions.md#ToSnakeCase)
         - [HtmlEscape](docs/extensions/stringExtensions.md#HtmlEscape)
         - [HtmlUnEscape](docs/extensions/stringExtensions.md#HtmlUnEscape)
+    - [FloatExtensions](docs/extensions/floatExtensions.md)
+        - [IsNaN](docs/extensions/floatExtensions.md#IsNaN)
+    - [DoubleExtensions](docs/extensions/doubleExtensions.md)
+        - [IsNaN](docs/extensions/doubleExtensions.md#IsNaN)
     - [ObservableCollectionExtensions](docs/extensions/observableCollectionExtensions.md)
         - [RemoveAll(match)](docs/extensions/observableCollectionExtensions.md#RemoveAll(match))
         - [RemoveAll(match,action)](docs/extensions/observableCollectionExtensions.md#RemoveAll(match,action))
@@ -63,16 +67,40 @@ NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.5
         - [SaveFileAsync](docs/extensions/settingsStorageExtensions.md#SaveFileAsync)
         - [ReadFileAsync](docs/extensions/settingsStorageExtensions.md#ReadFileAsync)
         - [ReadBytesAsync](docs/extensions/settingsStorageExtensions.md#ReadBytesAsync)
+- **Converters**
+    - [ElementThemeToIconConverter](docs/converters/elementThemeToIconConverter.md)
+    - [EnumToBooleanConverter](docs/converters/enumToBooleanConverter.md)
+    - [EnumToGridLengthConverter](docs/converters/enumToGridLengthConverter.md)
+    - [StringToVisibilityConverter](docs/converters/stringToVisibilityConverter.md)
 - **Helpers**
     - [Json](docs/helpers/json.md)
         - [ToObjectAsync](docs/helpers/json.md#ToObjectAsync)
         - [StringifyAsync](docs/helpers/json.md#StringifyAsync)
 - **Math**
-    - [IntegerExtensions](docs/math/integer.md)
+    - [Integer (Before IntegerExtensions)](docs/math/integer.md)
         - [Fibonacci](docs/math/integer.md#Fibonacci)
+        - [IsEven](docs/math/integer.md#IsEven)
+        - [Evens](docs/math/integer.md#Evens)
+        - [IsOdd](docs/math/integer.md#IsOdd)
+        - [Odds](docs/math/integer.md#Odds)
+        - [IsDivisibleBy](docs/math/integer.md#IsDivisibleBy)
+        - [IsMultipleOf](docs/math/integer.md#IsMultipleOf)
+        - [IsPrime](docs/math/integer.md#IsPrime)
+        - [Primes](docs/math/integer.md#Primes)
+    - [Number](docs/math/number.md)
+      - [IsBetween](docs/math/number.md#IsBetween)
+      - [IsPositive](docs/math/number.md#IsPositive)
+      - [IsNegative](docs/math/number.md#IsNegative)
+      - [IsZero](docs/math/number.md#IsZero)
+      - [IsInteger](docs/math/number.md#IsInteger)
+      - [IsDecimal](docs/math/number.md#IsDecimal)
+      - [IsNatural](docs/math/number.md#IsNatural)
 - **Services**
 	- [ThemeTitleBarService](docs/services/themeTitleBarService.md)
 	- [ThemeSelectorService](docs/services/themeSelectorService.md)
+- **Exceptions**
+    - [MinMaxException](docs/exceptions/minMaxException.md)
+    - [MultipleOfZeroException](docs/exceptions/multipleOfZeroException.md)
 
 
 
