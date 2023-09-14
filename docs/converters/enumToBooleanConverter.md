@@ -1,0 +1,3 @@
+# Converters
+### EnumToBooleanConverter
+⚒️ Working Example
