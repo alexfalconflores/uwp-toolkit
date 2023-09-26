@@ -9,6 +9,8 @@
     <img src="https://raw.githubusercontent.com/alexfalconflores/alexfalconflores/main/img/nuget-banner.svg" height=20 alt="Go to Nuget"/>
 </a>
 
+[Go to UWP Toolkit.Controls](<UWP Toolkit.Controls/Readme.md>)
+
 ## Installation 📦
 This project is available as a [NuGet package](https://www.nuget.org/packages/AlexFalconFlores.UWP.Toolkit). You can install it using the NuGet Package Console window:
 ```
