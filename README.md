@@ -11,6 +11,8 @@
 
 In `UWP Toolkit` you can find [**Controls**](<UWP Toolkit.Controls/Readme.md>), **Extensions, Converters for XAML, Helpers, Math, Exceptions**, and more.
 
+> This project can be used with C# 7.2, but we recommend that you use C# 11 in your project (.csproj) and use the [`PolySharp`](https://github.com/Sergio0694/PolySharp/tree/main) library.
+
 [Go to UWP Toolkit.Controls](<UWP Toolkit.Controls/Readme.md>)
 
 ## Installation 📦

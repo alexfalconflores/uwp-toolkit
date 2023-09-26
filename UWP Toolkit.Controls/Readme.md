@@ -8,6 +8,8 @@
     <img src="https://raw.githubusercontent.com/alexfalconflores/alexfalconflores/main/img/nuget-banner.svg" height=20 alt="Go to Nuget"/>
 </a>
 
+> This project can be used with C# 7.2, but we recommend that you use C# 11 in your project (.csproj) and use the [`PolySharp`](https://github.com/Sergio0694/PolySharp/tree/main) library.
+
 [Go to UWP Toolkit](../README.md)
 ## Installation 📦
 This project is available as a [NuGet package](https://www.nuget.org/packages/AlexFalconFlores.UWP.Toolkit.Controls). You can install it using the NuGet Package Console window:
