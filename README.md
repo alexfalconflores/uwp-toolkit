@@ -17,8 +17,8 @@ In `UWP Toolkit` you can find [**Controls**](<UWP Toolkit.Controls/Readme.md>), 
 
 ## Installation 📦
 This project is available as a [NuGet package](https://www.nuget.org/packages/AlexFalconFlores.UWP.Toolkit). You can install it using the NuGet Package Console window:
-```
-NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.5
+```bash
+NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.6
 ```
 
 ## Documentation 📖
