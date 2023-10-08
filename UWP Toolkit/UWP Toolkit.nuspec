@@ -2,16 +2,30 @@
 <package >
 	<metadata>
 		<id>AlexFalconFlores.UWP.Toolkit</id>
-		<version>0.0.6</version>
+		<version>0.0.7</version>
 		<title>UWP.Toolkit</title>
 		<authors>Alex Falcon Flores</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<license type="expression">MIT</license>
-		<!-- <icon>icon.png</icon> -->
+		<icon>Assets/icon.png</icon>
+		<readme>Docs/readme.md</readme>
 		<projectUrl>https://github.com/alexfalconflores/uwp-toolkit</projectUrl>
-		<description>Extensions for UWP</description>
-		<releaseNotes>First Release.</releaseNotes>
+		<description>
+			Essential library for UWP developers that simplifies application development with:
+			- Custom Exceptions for efficient error handling.
+			- Extensions for common types, such as strings, numbers, interface elements and more.
+			- Helpers and utilities for common tasks.
+			- Converters for XAML elements.
+			- Useful mathematical operations.
+			- Services to change the application theme and more.
+			Speed up your development with this library!
+		</description>
+		<releaseNotes>Add EnumExtensions, and ResourcesExtensions Methods</releaseNotes>
 		<copyright>Copyright 2023</copyright>
-		<tags>uwp, toolkit, csharp, extensions, db, database, xaml, universal, windows</tags>
+		<tags>uwp toolkit csharp extensions db database xaml universal windows helper</tags>
 	</metadata>
+	<files>
+		<file src="Assets\icon.png" target="Assets\"/>
+		<file src="Docs\readme.md" target="Docs\"/>
+	</files>
 </package>
