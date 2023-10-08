@@ -11,13 +11,7 @@
 		<readme>Docs/readme.md</readme>
 		<projectUrl>https://github.com/alexfalconflores/uwp-toolkit</projectUrl>
 		<description>
-			Essential library for UWP developers that simplifies application development with:
-			- Custom Exceptions for efficient error handling.
-			- Extensions for common types, such as strings, numbers, interface elements and more.
-			- Helpers and utilities for common tasks.
-			- Converters for XAML elements.
-			- Useful mathematical operations.
-			- Services to change the application theme and more.
+			Essential library for UWP developers that simplifies application development with: Custom Exceptions for efficient error handling. Extensions for common types, such as strings, numbers, interface elements and more. Helpers and utilities for common tasks. Converters for XAML elements. Useful mathematical operations. Services to change the application theme and more.
 			Speed up your development with this library!
 		</description>
 		<releaseNotes>Add EnumExtensions, and ResourcesExtensions Methods</releaseNotes>
