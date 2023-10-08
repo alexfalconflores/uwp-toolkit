@@ -5,10 +5,18 @@ using Windows.UI.Xaml.Media;
 
 namespace UWP_Toolkit.Extensions;
 
+/// <summary>
+/// Define Resource Extensions.
+/// </summary>
 public static class ResourceExtensions
 {
     private static ResourceLoader _resLoader = new();
 
+    /// <summary>
+    /// Provides simplified access to app resources such as app UI strings.
+    /// </summary>
+    /// <param name="resourceKey"></param>
+    /// <returns></returns>
     public static string GetLocalized(this string resourceKey) =>
         _resLoader.GetString(resourceKey);
 
@@ -22,7 +30,7 @@ public static class ResourceExtensions
     public static string Format(this string resourceKey, params object[] args) =>
         string.Format(resourceKey, args);
     /// <summary>
-    /// Get the <see cref="Double"/> resource from <see cref="Application.Current.Resources"/> by <see langword="string"/>.
+    /// Get the <see langword="double"/> resource from Application.Current.Resources by <see langword="string"/>.
     /// </summary>
     /// <param name="resourceKey"></param>
     /// <returns></returns>
@@ -37,21 +45,21 @@ public static class ResourceExtensions
         Application.Current.Resources[resourceKey] as Style ?? throw new NullReferenceException($"{resourceKey} is null");
 
     /// <summary>
-    /// Get AcrylicBrush from Resource.
+    /// Get <see cref="AcrylicBrush"/> from Resource.
     /// </summary>
     /// <param name="resourceKey"></param>
     /// <returns></returns>
-    /// <exception cref="NullReferenceException">Is null, only support AcrylicBrush Resources</exception>
+    /// <exception cref="NullReferenceException">Is null, only support <see cref="AcrylicBrush"/> Resources</exception>
     public static AcrylicBrush GetAcrylicBrush(this string resourceKey) =>
         Application.Current.Resources[resourceKey] as AcrylicBrush
         ?? throw new NullReferenceException($"{resourceKey} is null, only support AcrylicBrush Resources");
 
     /// <summary>
-    /// Get SolidColorBrush from Resource.
+    /// Get <see cref="SolidColorBrush"/> from Resource.
     /// </summary>
     /// <param name="resourceKey"></param>
     /// <returns></returns>
-    /// <exception cref="NullReferenceException">Is null, only support SolidColorBrush Resources</exception>
+    /// <exception cref="NullReferenceException">Is null, only support <see cref="SolidColorBrush"/> Resources</exception>
     public static SolidColorBrush GetSolidColorBrush(this string resourceKey) =>
         Application.Current.Resources[resourceKey] as SolidColorBrush
         ?? throw new NullReferenceException($"{resourceKey} is null, only support SolidColorBrush Resources");
