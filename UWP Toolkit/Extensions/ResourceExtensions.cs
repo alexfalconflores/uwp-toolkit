@@ -1,6 +1,7 @@
 ﻿using System;
 using Windows.ApplicationModel.Resources;
 using Windows.UI.Xaml;
+using Windows.UI.Xaml.Media;
 
 namespace UWP_Toolkit.Extensions;
 
@@ -34,4 +35,24 @@ public static class ResourceExtensions
     /// <exception cref="NullReferenceException"></exception>
     public static Style GetStyle(this string resourceKey) =>
         Application.Current.Resources[resourceKey] as Style ?? throw new NullReferenceException($"{resourceKey} is null");
+
+    /// <summary>
+    /// Get AcrylicBrush from Resource.
+    /// </summary>
+    /// <param name="resourceKey"></param>
+    /// <returns></returns>
+    /// <exception cref="NullReferenceException">Is null, only support AcrylicBrush Resources</exception>
+    public static AcrylicBrush GetAcrylicBrush(this string resourceKey) =>
+        Application.Current.Resources[resourceKey] as AcrylicBrush
+        ?? throw new NullReferenceException($"{resourceKey} is null, only support AcrylicBrush Resources");
+
+    /// <summary>
+    /// Get SolidColorBrush from Resource.
+    /// </summary>
+    /// <param name="resourceKey"></param>
+    /// <returns></returns>
+    /// <exception cref="NullReferenceException">Is null, only support SolidColorBrush Resources</exception>
+    public static SolidColorBrush GetSolidColorBrush(this string resourceKey) =>
+        Application.Current.Resources[resourceKey] as SolidColorBrush
+        ?? throw new NullReferenceException($"{resourceKey} is null, only support SolidColorBrush Resources");
 }
