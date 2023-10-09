@@ -49,4 +49,25 @@ var value = Application.Current.Resources["ButtonWidth"] as double? ?? throw new
 var value = "ButtonWidth".GetDouble();
 ```
 
+### GetAcrylicBrush
+Get `AcrylicBrush` from Resource.
+
+```csharp
+// without this library
+var value = Application.Current.Resources["AccentAcrylicBackgroundFillColorBaseBrush"] as SolidColorBrush ?? throw new NullReferenceException("not found");
+
+// with this library
+var value = "AccentAcrylicBackgroundFillColorBaseBrush".GetAcrylicBrush();
+```
+
+### GetSolidColorBrush
+Get `SolidColorBrush` from Resource.
+
+```csharp
+// without this library
+var value = Application.Current.Resources["SolidBackgroundFillColorBaseBrush"] as SolidColorBrush ?? throw new NullReferenceException("not found");
+
+// with this library
+var value = "SolidBackgroundFillColorBaseBrush".GetAcrylicBrush();
+```
 
