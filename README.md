@@ -13,12 +13,10 @@ In `UWP Toolkit` you can find [**Controls**](<UWP Toolkit.Controls/Readme.md>), 
 
 > This project can be used with C# 7.2, but we recommend that you use C# 11 in your project (.csproj) and use the [`PolySharp`](https://github.com/Sergio0694/PolySharp/tree/main) library.
 
-[Go to UWP Toolkit.Controls](<UWP Toolkit.Controls/Readme.md>)
-
 ## Installation 📦
 This project is available as a [NuGet package](https://www.nuget.org/packages/AlexFalconFlores.UWP.Toolkit). You can install it using the NuGet Package Console window:
 ```bash
-NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.6
+NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.7
 ```
 
 ## Documentation 📖
