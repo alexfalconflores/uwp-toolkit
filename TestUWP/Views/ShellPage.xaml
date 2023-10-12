@@ -8,10 +8,13 @@
     xmlns:i="using:Microsoft.Xaml.Interactivity"
     xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:utControls="using:UWP_Toolkit.Controls"
+    xmlns:utControls="using:UWP.Toolkit.Controls"
     xmlns:views="using:TestUWP.Views"
     xmlns:winui="using:Microsoft.UI.Xaml.Controls"
-    mc:Ignorable="d">
+    winui:BackdropMaterial.ApplyToRootOrPageBackground="True"
+    mc:Ignorable="d"
+    >
+    <!--    xmlns:utControls="using:UWP_Toolkit.Controls"    -->
 
     <i:Interaction.Behaviors>
         <ic:EventTriggerBehavior EventName="Loaded">
@@ -24,7 +27,8 @@
         IsBackButtonVisible="Visible"
         IsReleaseTagVisible="Visible"
         ReleaseTag="Release"
-        Size="Tall">
+        Size="Tall"
+        >
         <utControls:TitleBar.Body>
             <winui:NavigationView
                 x:Name="navigationView"
@@ -32,7 +36,8 @@
                 IsBackButtonVisible="Visible"
                 IsBackEnabled="{x:Bind ViewModel.IsBackEnabled, Mode=OneWay}"
                 IsSettingsVisible="True"
-                SelectedItem="{x:Bind ViewModel.Selected, Mode=OneWay}">
+                SelectedItem="{x:Bind ViewModel.Selected, Mode=OneWay}"
+                >
                 <winui:NavigationView.MenuItems>
                     <!--
                         TODO: Change the symbols for each item as appropriate for your app
@@ -40,20 +45,14 @@
                         Or to use an IconElement instead of a Symbol see https://github.com/microsoft/TemplateStudio/blob/main/docs/UWP/projectTypes/navigationpane.md
                         Edit String/en-US/Resources.resw: Add a menu item title for each page
                     -->
-                    <winui:NavigationViewItem
-                        x:Uid="Shell_Main"
-                        helpers:NavHelper.NavigateTo="views:MainPage"
-                        Icon="Document" />
+                    <winui:NavigationViewItem x:Uid="Shell_Main" helpers:NavHelper.NavigateTo="views:MainPage" Icon="Document" />
                 </winui:NavigationView.MenuItems>
                 <i:Interaction.Behaviors>
                     <behaviors:NavigationViewHeaderBehavior DefaultHeader="{x:Bind ViewModel.Selected.Content, Mode=OneWay}">
                         <behaviors:NavigationViewHeaderBehavior.DefaultHeaderTemplate>
                             <DataTemplate>
                                 <Grid>
-                                    <TextBlock
-                                        Margin="{StaticResource SmallLeftRightMargin}"
-                                        Style="{ThemeResource TitleTextBlockStyle}"
-                                        Text="{Binding}" />
+                                    <TextBlock Margin="{StaticResource SmallLeftRightMargin}" Style="{ThemeResource TitleTextBlockStyle}" Text="{Binding}" />
                                 </Grid>
                             </DataTemplate>
                         </behaviors:NavigationViewHeaderBehavior.DefaultHeaderTemplate>

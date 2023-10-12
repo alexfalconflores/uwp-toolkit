@@ -6,10 +6,12 @@
     xmlns:contract7NotPresent="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractNotPresent(Windows.Foundation.UniversalApiContract,7)"
     xmlns:contract7Present="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract,7)"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:TestUWP.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:utControls="using:UWP_Toolkit.Controls"
-    Style="{StaticResource PageStyle}"
-    mc:Ignorable="d">
+    xmlns:utControls="using:UWP.Toolkit.Controls"
+    xmlns:winui="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    >
     <Page.Resources>
         <Thickness x:Key="SearchTextBoxPadding">6,4,12,4</Thickness>
         <x:Double x:Key="AutoSuggestBoxIconFontSize">12</x:Double>
@@ -45,7 +47,8 @@
                                                     contract7Present:CornerRadius="{TemplateBinding CornerRadius}"
                                                     Background="{ThemeResource TextControlButtonBackground}"
                                                     BorderBrush="{ThemeResource TextControlButtonBorderBrush}"
-                                                    BorderThickness="{TemplateBinding BorderThickness}">
+                                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                                    >
                                                     <TextBlock
                                                         x:Name="GlyphElement"
                                                         HorizontalAlignment="Center"
@@ -55,7 +58,8 @@
                                                         FontSize="{ThemeResource AutoSuggestBoxIconFontSize}"
                                                         FontStyle="Normal"
                                                         Foreground="{ThemeResource TextControlButtonForeground}"
-                                                        Text="&#xE894;" />
+                                                        Text="&#xE894;"
+                                                        />
                                                     <VisualStateManager.VisualStateGroups>
                                                         <VisualStateGroup x:Name="CommonStates">
                                                             <VisualState x:Name="Normal" />
@@ -90,11 +94,7 @@
 
                                                             <VisualState x:Name="Disabled">
                                                                 <Storyboard>
-                                                                    <DoubleAnimation
-                                                                        Storyboard.TargetName="ButtonLayoutGrid"
-                                                                        Storyboard.TargetProperty="Opacity"
-                                                                        To="0"
-                                                                        Duration="0" />
+                                                                    <DoubleAnimation Storyboard.TargetName="ButtonLayoutGrid" Storyboard.TargetProperty="Opacity" To="0" Duration="0" />
                                                                 </Storyboard>
                                                             </VisualState>
                                                         </VisualStateGroup>
@@ -123,7 +123,8 @@
                                                     Content="{TemplateBinding Content}"
                                                     ContentTemplate="{TemplateBinding ContentTemplate}"
                                                     ContentTransitions="{TemplateBinding ContentTransitions}"
-                                                    FontSize="{ThemeResource AutoSuggestBoxIconFontSize}">
+                                                    FontSize="{ThemeResource AutoSuggestBoxIconFontSize}"
+                                                    >
                                                     <VisualStateManager.VisualStateGroups>
                                                         <VisualStateGroup x:Name="CommonStates">
                                                             <VisualState x:Name="Normal" />
@@ -158,11 +159,7 @@
 
                                                             <VisualState x:Name="Disabled">
                                                                 <Storyboard>
-                                                                    <DoubleAnimation
-                                                                        Storyboard.TargetName="ContentPresenter"
-                                                                        Storyboard.TargetProperty="Opacity"
-                                                                        To="0"
-                                                                        Duration="0" />
+                                                                    <DoubleAnimation Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Opacity" To="0" Duration="0" />
                                                                 </Storyboard>
                                                             </VisualState>
                                                         </VisualStateGroup>
@@ -194,7 +191,8 @@
                                 contract7Present:CornerRadius="{TemplateBinding CornerRadius}"
                                 Background="{TemplateBinding Background}"
                                 BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}" />
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                />
                             <ContentPresenter
                                 x:Name="HeaderContentPresenter"
                                 Grid.Row="0"
@@ -206,7 +204,8 @@
                                 FontWeight="Normal"
                                 Foreground="{ThemeResource TextControlHeaderForeground}"
                                 TextWrapping="Wrap"
-                                Visibility="Collapsed" />
+                                Visibility="Collapsed"
+                                />
                             <Button
                                 x:Name="QueryButton"
                                 Grid.Row="1"
@@ -219,7 +218,8 @@
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 FontSize="{TemplateBinding FontSize}"
                                 IsTabStop="False"
-                                Style="{StaticResource QueryButtonStyle}" />
+                                Style="{StaticResource QueryButtonStyle}"
+                                />
                             <ScrollViewer
                                 x:Name="ContentElement"
                                 Grid.Row="1"
@@ -237,7 +237,8 @@
                                 IsVerticalRailEnabled="{TemplateBinding ScrollViewer.IsVerticalRailEnabled}"
                                 VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}"
                                 VerticalScrollMode="{TemplateBinding ScrollViewer.VerticalScrollMode}"
-                                ZoomMode="Disabled" />
+                                ZoomMode="Disabled"
+                                />
                             <ContentControl
                                 x:Name="PlaceholderTextContentPresenter"
                                 Grid.Row="1"
@@ -249,7 +250,8 @@
                                 Content="{TemplateBinding PlaceholderText}"
                                 Foreground="{ThemeResource TextControlPlaceholderForeground}"
                                 IsHitTestVisible="False"
-                                IsTabStop="False" />
+                                IsTabStop="False"
+                                />
                             <Button
                                 x:Name="DeleteButton"
                                 Grid.Row="1"
@@ -262,7 +264,8 @@
                                 FontSize="{TemplateBinding FontSize}"
                                 IsTabStop="False"
                                 Style="{StaticResource DeleteButtonStyle}"
-                                Visibility="Collapsed" />
+                                Visibility="Collapsed"
+                                />
                             <contract7Present:ContentPresenter
                                 x:Name="DescriptionPresenter"
                                 Grid.Row="2"
@@ -270,7 +273,8 @@
                                 x:Load="False"
                                 AutomationProperties.AccessibilityView="Raw"
                                 Content="{TemplateBinding Description}"
-                                Foreground="{ThemeResource SystemControlDescriptionTextForegroundBrush}" />
+                                Foreground="{ThemeResource SystemControlDescriptionTextForegroundBrush}"
+                                />
 
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="CommonStates">
@@ -364,23 +368,38 @@
             </Setter>
         </Style>
 
-        <Style
-            x:Key="DefaultSearchStyle"
-            BasedOn="{StaticResource DefaultAutoSuggestBoxStyle}"
-            TargetType="AutoSuggestBox">
+        <Style x:Key="DefaultSearchStyle" BasedOn="{StaticResource DefaultAutoSuggestBoxStyle}" TargetType="AutoSuggestBox">
             <Setter Property="TextBoxStyle" Value="{StaticResource SearchTextBoxStyle}" />
         </Style>
     </Page.Resources>
     <StackPanel x:Name="ContentArea" Margin="{StaticResource MediumLeftRightMargin}">
-        <AutoSuggestBox
-            PlaceholderText="Search Box"
-            QueryIcon="Find"
-            Style="{ThemeResource DefaultSearchStyle}" />
+        <AutoSuggestBox PlaceholderText="Search Box" QueryIcon="Find" Style="{ThemeResource DefaultSearchStyle}" />
         <TextBlock x:Name="IsEven" />
         <TextBlock x:Name="IsOdd" />
         <TextBlock x:Name="IsDivisibleBy" />
         <TextBlock x:Name="IsMultipleOf" />
         <TextBlock x:Name="IsPrime" />
         <utControls:Script ButtonToolTip="Copy" Text="Alex.Falcon.Flores" />
+        <local:Avatar BorderBrush="Red" BorderThickness="4" ProfilePicture="https://docs.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" />
+        <Button Click="Button_Click" Content="Open Popup" />
+        <AppBarButton Label="Accept">
+            <AppBarButton.Icon>
+                <IconSourceElement>
+                    <IconSourceElement.IconSource>
+                        <SymbolIconSource Symbol="Accept" />
+                    </IconSourceElement.IconSource>
+                </IconSourceElement>
+            </AppBarButton.Icon>
+        </AppBarButton>
+        <Button Click="Button_Click_1" Content="New Toast" />
+        <TextBlock x:Name="stackpanelCount" />
+        <Button Click="Button_Click_2" Content="Get Children" />
+        <winui:InfoBar
+            x:Name="InfoBarTest"
+            Title="Title"
+            IsOpen="True"
+            Message="Message"
+            Severity="Error"
+            />
     </StackPanel>
 </Page>
