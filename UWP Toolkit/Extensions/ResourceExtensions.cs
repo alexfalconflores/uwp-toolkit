@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Windows.ApplicationModel.Resources;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media;
@@ -63,4 +64,17 @@ public static class ResourceExtensions
     public static SolidColorBrush GetSolidColorBrush(this string resourceKey) =>
         Application.Current.Resources[resourceKey] as SolidColorBrush
         ?? throw new NullReferenceException($"{resourceKey} is null, only support SolidColorBrush Resources");
+
+    /// <summary>
+    /// Get <see cref="CornerRadius"/> from Resource.
+    /// </summary>
+    /// <param name="key"></param>
+    /// <returns></returns>
+    /// <exception cref="KeyNotFoundException"></exception>
+    public static CornerRadius GetCornerRadius(this string key)
+    {
+        if (!Application.Current.Resources.ContainsKey(key)) throw new KeyNotFoundException();
+        return (CornerRadius)Application.Current.Resources[key];
+    }
+
 }

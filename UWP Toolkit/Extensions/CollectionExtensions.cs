@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace UWP_Toolkit.Extensions;
 
+/// <summary>
+/// Collection Extensions.
+/// </summary>
 public static class CollectionExtensions
 {
     /// <summary>
