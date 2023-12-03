@@ -139,6 +139,7 @@
     <Compile Include="DB\SQLite\SQLite.cs" />
     <Compile Include="Exceptions\MinMaxException.cs" />
     <Compile Include="Exceptions\MultipleOfZeroException.cs" />
+    <Compile Include="Extensions\BrushExtensions.cs" />
     <Compile Include="Extensions\CollectionExtensions.cs" />
     <Compile Include="Extensions\DoubleExtensions.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
@@ -171,7 +172,7 @@
       <Version>13.0.3</Version>
     </PackageReference>
     <PackageReference Include="PolySharp">
-      <Version>1.13.2</Version>
+      <Version>1.14.0</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
