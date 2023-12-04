@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.Versioning;
 using System.Text.RegularExpressions;
+using UWP_Toolkit.Exceptions;
+using UWP_Toolkit.Internal.Buffers;
 
 namespace UWP_Toolkit.Extensions;
 
@@ -166,5 +171,16 @@ public static class StringExtensions
     {
         if (input is null) throw new ArgumentNullException(nameof(input));
         return WebUtility.HtmlDecode(input);
+    }
+
+    /// <summary>
+    /// Reverses a string.
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns></returns>
+    public static string ReverseString(this string input)
+    {
+        var reversed = input.Reverse();
+        return string.Concat(reversed);
     }
 }
