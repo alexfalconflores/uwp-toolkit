@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace UWP_Toolkit.Extensions;
 
@@ -25,5 +26,22 @@ public static class CollectionExtensions
         if (canOverwrite) collection.Clear();
         for (int i = 0; i < quantity; i++)
             collection.Add(value);
+    }
+
+    /// <summary>
+    /// Get a random element from the collection.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="source"></param>
+    /// <returns>Element</returns>
+    /// <exception cref="ArgumentNullException"></exception>
+    /// <exception cref="ArgumentException"></exception>
+    public static T RandomChoice<T>(this ICollection<T> source)
+    {
+        if (source is null) throw new ArgumentNullException(nameof(source));
+        if (!source.Any()) throw new ArgumentException("The source collection is empty.", nameof(source));
+        var random = new Random();
+        var index = random.Next(source.Count());
+        return source.ElementAt(index);
     }
 }
