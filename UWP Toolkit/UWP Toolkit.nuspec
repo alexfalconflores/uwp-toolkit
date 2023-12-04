@@ -17,6 +17,10 @@
 		<releaseNotes>Add EnumExtensions, and ResourcesExtensions Methods</releaseNotes>
 		<copyright>Copyright 2023</copyright>
 		<tags>uwp toolkit csharp extensions db database xaml universal windows helper</tags>
+		<dependencies>
+			<dependency id="PolySharp" version="1.14.0" />
+			<dependency id="Newtonsoft.Json" version="13.0.3" />
+		</dependencies>
 	</metadata>
 	<files>
 		<file src="Assets\icon.png" target="Assets\"/>
