@@ -1,4 +1,5 @@
-# Math
+# Math [Deprecated]
+> Please install the package [DotToolkit](https://github.com/alexfalconflores/dottoolkit) from Nuget and use `using DotToolkit.Math` instead.
 ## Number
 ### IsBetween
 Check if the number is between two numbers.

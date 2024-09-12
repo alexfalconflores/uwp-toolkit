@@ -1,4 +1,6 @@
-# Math
+# Math [Deprecated]
+> Please install the package [DotToolkit](https://github.com/alexfalconflores/dottoolkit) from Nuget and use `using DotToolkit.Math` instead.
+
 ## Integer (Before IntegerExtensions)
 ### Fibonacci
 Get a `list` of Fibonacci numbers. Return Exception if `n` is less than `0`.

@@ -1,7 +1,5 @@
 ﻿![UWP Toolkit Cover](assets/uwp-toolkit-cover.png)
-
-> This project uses `C# 11` with the [`PolySharp`](https://github.com/Sergio0694/PolySharp/tree/main) library. The minimum version is Windows 10, `1903` (Build,18362).
-<br/>
+# UWP Toolkit
 
 [![NuGet](https://img.shields.io/nuget/dt/AlexFalconFlores.UWP.Toolkit.svg)](https://www.nuget.org/stats/packages/AlexFalconFlores.UWP.Toolkit?groupby=Version) 
 [![NuGet](https://img.shields.io/nuget/vpre/AlexFalconFlores.UWP.Toolkit.svg)](https://www.nuget.org/packages/AlexFalconFlores.UWP.Toolkit/)
@@ -9,9 +7,7 @@
     <img src="https://raw.githubusercontent.com/alexfalconflores/alexfalconflores/main/img/nuget-banner.svg" height=20 alt="Go to Nuget"/>
 </a>
 
-In `UWP Toolkit` you can find [**Controls**](<UWP Toolkit.Controls/Readme.md>), **Extensions, Converters for XAML, Helpers, Math, Exceptions**, and more.
-
-> This project can be used with C# 7.2, but we recommend that you use C# 11 in your project (.csproj) and use the [`PolySharp`](https://github.com/Sergio0694/PolySharp/tree/main) library.
+In `UWP Toolkit` you can find [**Controls**](<UWP Toolkit.Controls/Readme.md>), **Extensions, Converters for XAML, Helpers, Exceptions**, and more.
 
 ## Installation 📦
 This project is available as a [NuGet package](https://www.nuget.org/packages/AlexFalconFlores.UWP.Toolkit). You can install it using the NuGet Package Console window:
@@ -92,31 +88,14 @@ NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.7
     - [Json](docs/helpers/json.md)
         - [ToObjectAsync](docs/helpers/json.md#ToObjectAsync)
         - [StringifyAsync](docs/helpers/json.md#StringifyAsync)
-- **Math**
-    - [Integer (Before IntegerExtensions)](docs/math/integer.md)
-        - [Fibonacci](docs/math/integer.md#Fibonacci)
-        - [IsEven](docs/math/integer.md#IsEven)
-        - [Evens](docs/math/integer.md#Evens)
-        - [IsOdd](docs/math/integer.md#IsOdd)
-        - [Odds](docs/math/integer.md#Odds)
-        - [IsDivisibleBy](docs/math/integer.md#IsDivisibleBy)
-        - [IsMultipleOf](docs/math/integer.md#IsMultipleOf)
-        - [IsPrime](docs/math/integer.md#IsPrime)
-        - [Primes](docs/math/integer.md#Primes)
-    - [Number](docs/math/number.md)
-      - [IsBetween](docs/math/number.md#IsBetween)
-      - [IsPositive](docs/math/number.md#IsPositive)
-      - [IsNegative](docs/math/number.md#IsNegative)
-      - [IsZero](docs/math/number.md#IsZero)
-      - [IsInteger](docs/math/number.md#IsInteger)
-      - [IsDecimal](docs/math/number.md#IsDecimal)
-      - [IsNatural](docs/math/number.md#IsNatural)
 - **Services**
 	- [ThemeTitleBarService](docs/services/themeTitleBarService.md)
 	- [ThemeSelectorService](docs/services/themeSelectorService.md)
 - **Exceptions**
     - [MinMaxException](docs/exceptions/minMaxException.md)
     - [MultipleOfZeroException](docs/exceptions/multipleOfZeroException.md)
+- **Math** [Deprecated -> use DotToolkit](https://github.com/alexfalconflores/dottoolkit)
+  - Please install the package [DotToolkit](https://github.com/alexfalconflores/dottoolkit) from Nuget and use `using DotToolkit.Math` instead.
 
 
 
