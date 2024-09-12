@@ -94,7 +94,7 @@ NuGet\Install-Package AlexFalconFlores.UWP.Toolkit -Version 0.0.7
 - **Exceptions**
     - [MinMaxException](docs/exceptions/minMaxException.md)
     - [MultipleOfZeroException](docs/exceptions/multipleOfZeroException.md)
-- **Math** [Deprecated -> use DotToolkit](https://github.com/alexfalconflores/dottoolkit)
+- **Math** [Deprecated]
   - Please install the package [DotToolkit](https://github.com/alexfalconflores/dottoolkit) from Nuget and use `using DotToolkit.Math` instead.
 
 
