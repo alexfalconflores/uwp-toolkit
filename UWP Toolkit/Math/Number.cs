@@ -22,6 +22,10 @@ public static class Number
     /// <param name="maxValue"></param>
     /// <returns></returns>
     /// <exception cref="MinMaxException"></exception>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsBetween<T>(this T number, T minValue, T maxValue) where T : struct, IComparable<T>
     {
         if (minValue.CompareTo(maxValue) > 0)
@@ -34,6 +38,10 @@ public static class Number
     /// </summary>
     /// <param name="number"></param>
     /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsPositive<T>(this T number) where T : struct, IComparable<T>
     {
         T zero = default(T);
@@ -45,6 +53,10 @@ public static class Number
     /// </summary>
     /// <param name="number"></param>
     /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsNegative<T>(this T number) where T : struct, IComparable<T>
     {
         T zero = default(T);
@@ -56,6 +68,10 @@ public static class Number
     /// </summary>
     /// <param name="number"></param>
     /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsZero<T>(this T number) where T : struct, IComparable<T>
     {
         T zero = default(T);
@@ -67,7 +83,10 @@ public static class Number
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="number"></param>
-    /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsInteger<T>(this T number) where T : struct, IComparable<T> => INTEGERS.Contains(number.GetType());
 
     /// <summary>
@@ -76,6 +95,10 @@ public static class Number
     /// <typeparam name="T"></typeparam>
     /// <param name="number"></param>
     /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsDecimal<T>(this T number) where T : struct, IComparable<T> => DECIMAL.Contains(number.GetType());
 
     /// <summary>
@@ -84,7 +107,10 @@ public static class Number
     /// <typeparam name="T"></typeparam>
     /// <param name="number"></param>
     /// <param name="includeZero"></param>
-    /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsNatural<T>(this T number, bool includeZero = true) where T : struct, IComparable<T>
     {
         int min = includeZero ? 0 : 1;

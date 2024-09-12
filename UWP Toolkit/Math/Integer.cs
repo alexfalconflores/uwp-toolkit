@@ -6,15 +6,6 @@ namespace UWP_Toolkit.Math;
 
 public static class Integer
 {
-    //public static long Fibonacci(int n)
-    //{
-    //    Recursive Fibonacci
-    //    if (n == 0)
-    //        return 0;
-    //    if (n < 2)
-    //        return 1;
-    //    return Fibonacci(n - 1) + Fibonacci(n - 2);
-    //}
     /// <summary>
     /// Get a list of Fibonacci numbers. Return Exception if n is less than 0.
     /// </summary>
@@ -23,6 +14,10 @@ public static class Integer
     /// <exception cref="ArgumentOutOfRangeException">
     /// If <paramref name="n"/> is less than 0.
     /// </exception>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static List<ulong> Fibonacci(this int n)
     {
         //Iterative Fibonacci
@@ -40,6 +35,10 @@ public static class Integer
     /// </summary>
     /// <param name="number"></param>
     /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsEven(this int number)
     {
         if (number % 2 == 0) return true;
@@ -52,6 +51,10 @@ public static class Integer
     /// </summary>
     /// <param name="number"></param>
     /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static IEnumerable<int> Evens(this int number)
     {
         for (int i = 0; i <= number; i++)
@@ -64,6 +67,10 @@ public static class Integer
     /// </summary>
     /// <param name="number"></param>
     /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsOdd(this int number)
     {
         if (number % 2 != 0) return true;
@@ -75,7 +82,10 @@ public static class Integer
     /// <para>Output: {1 ,3 ,5 ,7 ,9}</para>
     /// </summary>
     /// <param name="number"></param>
-    /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static IEnumerable<int> Odds(this int number)
     {
         for (int i = 0; i <= number; i++)
@@ -90,6 +100,10 @@ public static class Integer
     /// <param name="divider"></param>
     /// <returns>Returns true if the number is divisible by the divisor, otherwise false</returns>
     /// <exception cref="DivideByZeroException">The divider cannot be zero.</exception>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsDivisibleBy(this int number, int divider)
     {
         if (divider == 0) throw new DivideByZeroException();
@@ -104,7 +118,10 @@ public static class Integer
     /// <param name="number"></param>
     /// <param name="multiple"></param>
     /// <returns></returns>
-    /// <exception cref="MultipleOfZeroException"></exception>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsMultipleOf(this int number, int multiple)
     {
         if (multiple == 0) throw new MultipleOfZeroException("The multiple cannot be zero.");
@@ -117,7 +134,10 @@ public static class Integer
     /// Check if the number is prime.
     /// </summary>
     /// <param name="number"></param>
-    /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static bool IsPrime(this int number)
     {
         if (number == 0) return false;
@@ -135,7 +155,10 @@ public static class Integer
     /// Get the prime numbers until the quantity.
     /// </summary>
     /// <param name="quantity"></param>
-    /// <returns></returns>
+    /// <remarks>
+    /// <b>Deprecated:</b> This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.
+    /// </remarks>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Math' instead.")]
     public static IEnumerable<int> Primes(this int quantity)
     {
         for (int i = 0; i <= quantity; i++)
