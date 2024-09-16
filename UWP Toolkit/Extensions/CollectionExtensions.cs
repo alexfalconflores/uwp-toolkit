@@ -41,7 +41,7 @@ public static class CollectionExtensions
         if (source is null) throw new ArgumentNullException(nameof(source));
         if (!source.Any()) throw new ArgumentException("The source collection is empty.", nameof(source));
         var random = new Random();
-        var index = random.Next(source.Count());
+        var index = random.Next(source.Count);
         return source.ElementAt(index);
     }
 }

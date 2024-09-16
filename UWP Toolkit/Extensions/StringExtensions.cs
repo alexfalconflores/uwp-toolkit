@@ -18,6 +18,7 @@ public static class StringExtensions
     /// </summary>
     /// <param name="value"></param>
     /// <returns><see langword="string"/></returns>
+    [Obsolete("This method is deprecated. Please use the Trim() function.")]
     public static string TrimAround(this string value)
     {
         return value.TrimStart().TrimEnd();
@@ -28,6 +29,7 @@ public static class StringExtensions
     /// </summary>
     /// <param name="value">The <see cref="string"/> to test.</param>
     /// <returns><see langword="true"/> if the value parameter is <see langword="null"/> or an empty string (""); otherwise, <see langword="false"/>.</returns>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static bool IsNullOrEmpty(this string value)
     {
         return string.IsNullOrEmpty(value);
@@ -42,6 +44,7 @@ public static class StringExtensions
     /// <see langword="true"/> if the value parameter is <see langword="null"/> or <see cref="System.String.Empty"/>, or if value consists
     /// exclusively of white-space characters.
     ///</returns>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static bool IsNullOrWhiteSpace(this string value)
     {
         return string.IsNullOrWhiteSpace(value);
@@ -57,6 +60,7 @@ public static class StringExtensions
     /// <returns>A string that consists of the members of values delimited by the separator string.
     /// If values has no members, the method returns System.String.Empty.</returns>
     /// <exception cref="ArgumentNullException">values is null.</exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static string Join<T>(this IEnumerable<T> collection, string? separator)
     {
         if (collection is null) throw new ArgumentNullException(nameof(collection));
@@ -72,6 +76,7 @@ public static class StringExtensions
     /// Returns the repeated string.
     /// </returns>
     /// <exception cref="ArgumentNullException"></exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static string Repeat(this string input, int numberRepeat = 1)
     {
         if (input is null) throw new ArgumentNullException(nameof(input));
@@ -89,6 +94,7 @@ public static class StringExtensions
     /// <param name="input"></param>
     /// <returns>Returns the <see href="https://en.wikipedia.org/wiki/Camel_case">camelCase</see> string.</returns>
     /// <exception cref="ArgumentNullException"></exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static string ToCamelCase(this string input)
     {
         if (input is null) throw new ArgumentNullException(nameof(input));
@@ -110,6 +116,7 @@ public static class StringExtensions
     /// <param name="input"></param>
     /// <returns>Returns the <see href="">PascalCase</see> string.</returns>
     /// <exception cref="ArgumentNullException"></exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static string ToPascalCase(this string input)
     {
         if (input is null) throw new ArgumentNullException(nameof(input));
@@ -127,6 +134,7 @@ public static class StringExtensions
     /// <param name="input"></param>
     /// <returns>Returns the <see href="https://en.wikipedia.org/wiki/Letter_case#Special_case_styles">kebab-case</see> string.</returns>
     /// <exception cref="ArgumentNullException"></exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static string ToKebabCase(this string input)
     {
         if (input is null) throw new ArgumentNullException(nameof(input));
@@ -141,6 +149,7 @@ public static class StringExtensions
     /// <param name="input"></param>
     /// <returns>Returns the <see href="https://en.wikipedia.org/wiki/Snake_case">snake_case</see> string</returns>
     /// <exception cref="ArgumentNullException"></exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static string ToSnakeCase(this string input)
     {
         if (input is null) throw new ArgumentNullException(nameof(input));
@@ -155,6 +164,7 @@ public static class StringExtensions
     /// <param name="input"></param>
     /// <returns>Returns the escaped string</returns>
     /// <exception cref="ArgumentNullException"></exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static string HtmlEscape(this string input)
     {
         if (input is null) throw new ArgumentNullException(nameof(input));
@@ -167,6 +177,7 @@ public static class StringExtensions
     /// <param name="input"></param>
     /// <returns> Returns the unescaped string.</returns>
     /// <exception cref="ArgumentNullException"></exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static string HtmlUnEscape(this string input)
     {
         if (input is null) throw new ArgumentNullException(nameof(input));
@@ -178,6 +189,7 @@ public static class StringExtensions
     /// </summary>
     /// <param name="input"></param>
     /// <returns></returns>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static string ReverseString(this string input)
     {
         var reversed = input.Reverse();
