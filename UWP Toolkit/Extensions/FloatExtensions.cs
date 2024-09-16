@@ -1,4 +1,6 @@
-﻿namespace UWP_Toolkit.Extensions;
+﻿using System;
+
+namespace UWP_Toolkit.Extensions;
 
 public static class FloatExtensions
 {
@@ -16,5 +18,6 @@ public static class FloatExtensions
     /// </summary>
     /// <param name="number"></param>
     /// <returns></returns>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static bool IsNaN(this float number) => float.IsNaN(number);
 }
