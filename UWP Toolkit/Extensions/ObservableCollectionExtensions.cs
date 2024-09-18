@@ -14,6 +14,7 @@ public static class ObservableCollectionExtensions
     /// <param name="match">The <see cref="Predicate{T}"/> delegate that defines the conditions of the elements to remove.</param>
     /// <returns>The number of elements removed from the <see cref="ObservableCollection{T}"/></returns>
     /// <exception cref="ArgumentNullException">match is <see langword="null"/></exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static int RemoveAll<T>(this ObservableCollection<T> collection, Predicate<T> match)
     {
         if (match is null) throw new ArgumentNullException(nameof(match), "The predicate cannot be null");
@@ -40,6 +41,7 @@ public static class ObservableCollectionExtensions
     /// <param name="onRemoved">The <see cref="Action"/> delegate that represents the custom action to be performed for each element that is removed. </param>
     /// <returns>The number of elements removed from the <see cref="ObservableCollection{T}"/></returns>
     /// <exception cref="ArgumentNullException">match is <see langword="null"/> or onRemoved is <see langword="null"/></exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static int RemoveAll<T>(this ObservableCollection<T> collection, Predicate<T> match, Action<T> onRemoved)
     {
         if (match is null) throw new ArgumentNullException(nameof(match), "The predicate cannot be null");

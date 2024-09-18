@@ -19,6 +19,7 @@ public static class CollectionExtensions
     /// <param name="canOverwrite">Indicates whether the collection should be deleted before filling.</param>
     /// <exception cref="ArgumentNullException"></exception>
     /// <exception cref="ArgumentOutOfRangeException"></exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static void Fill<T>(this ICollection<T> collection, int quantity, T value, bool canOverwrite = true)
     {
         if (collection is null) throw new ArgumentNullException(nameof(collection));
@@ -36,6 +37,7 @@ public static class CollectionExtensions
     /// <returns>Element</returns>
     /// <exception cref="ArgumentNullException"></exception>
     /// <exception cref="ArgumentException"></exception>
+    [Obsolete("This method is deprecated. Please install the package 'DotToolkit' from Nuget and use 'DotToolkit.Extensions' instead.")]
     public static T RandomChoice<T>(this ICollection<T> source)
     {
         if (source is null) throw new ArgumentNullException(nameof(source));
